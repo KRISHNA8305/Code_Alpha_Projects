@@ -1,7 +1,7 @@
 import random
 
 def play_hangman():
-    word_list = ["python", "hangman", "programming", "computer", "challenge"]
+    word_list = ["america", "new york", "california", "india", "japan","africa"]
     chosen_word = random.choice(word_list).upper()
     word_completion = ["_"] * len(chosen_word)
     guessed_letters = []
@@ -39,5 +39,6 @@ def play_hangman():
         print("Congratulations! You guessed the word!")
     else:
         print("\nGame Over! The word was: " + chosen_word)
+
 
 play_hangman()
